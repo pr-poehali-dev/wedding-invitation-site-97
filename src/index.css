@@ -5,87 +5,53 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 340 15% 30%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 340 15% 30%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 340 15% 30%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 340 40% 68%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 30 60% 92%;
+    --secondary-foreground: 340 15% 30%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 30 40% 95%;
+    --muted-foreground: 340 10% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 280 30% 85%;
+    --accent-foreground: 340 15% 30%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 340 20% 88%;
+    --input: 340 20% 88%;
+    --ring: 340 40% 68%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+
+    /* Wedding custom vars */
+    --rose: #e8a0a0;
+    --blush: #f2c4c4;
+    --peach: #f5d5c0;
+    --lavender: #d4b8e0;
+    --cream: #fdf6f0;
+    --gold: #c9a96e;
+    --text-dark: #5a3a3a;
+    --text-mid: #8a6060;
+    --text-light: #b89090;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
@@ -97,5 +63,220 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Cormorant Garamond", serif;
+    background-color: var(--cream);
+    color: var(--text-dark);
   }
+}
+
+/* Floating petals */
+@keyframes float-petal {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.2);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.15);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.9s ease forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 1.2s ease forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.8s ease forwards;
+}
+
+.animate-heartbeat {
+  animation: heartbeat 2s ease infinite;
+}
+
+.petal {
+  position: fixed;
+  pointer-events: none;
+  font-size: 1.2rem;
+  animation:
+    float-petal linear infinite,
+    sway ease-in-out infinite;
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, var(--gold), #e8c98a, var(--gold));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+.section-divider {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--rose), transparent);
+  margin: 0 auto;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(232, 160, 160, 0.25);
+}
+
+.btn-rose {
+  background: linear-gradient(135deg, var(--rose), var(--blush));
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(232, 160, 160, 0.4);
+}
+
+.btn-rose:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(232, 160, 160, 0.5);
+}
+
+.btn-outline-rose {
+  background: transparent;
+  color: var(--rose);
+  border: 1.5px solid var(--rose);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-rose:hover {
+  background: var(--rose);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Countdown timer */
+.timer-block {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(232, 160, 160, 0.3);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+}
+
+/* Photo placeholder */
+.photo-frame {
+  border: 2px solid rgba(201, 169, 110, 0.4);
+  box-shadow:
+    0 8px 40px rgba(201, 169, 110, 0.15),
+    inset 0 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Form inputs */
+.wedding-input {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(232, 160, 160, 0.4);
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  transition: border-color 0.3s;
+  width: 100%;
+  outline: none;
+}
+
+.wedding-input:focus {
+  border-color: var(--rose);
+  box-shadow: 0 0 0 3px rgba(232, 160, 160, 0.15);
+}
+
+.wedding-input::placeholder {
+  color: var(--text-light);
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Decorative ornament */
+.ornament {
+  color: var(--gold);
+  opacity: 0.6;
+  letter-spacing: 0.3em;
+  font-size: 0.85rem;
 }
