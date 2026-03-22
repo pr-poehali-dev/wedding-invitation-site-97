@@ -21,7 +21,7 @@ export default function DetailsSection() {
             {[
               { emoji: "📅", title: "Дата", line1: "15 августа 2026", line2: "Суббота" },
               { emoji: "⏰", title: "Время", line1: "17:00", line2: "" },
-              { emoji: "🏛️", title: "Место", line1: "Ресторан «Розовый сад»", line2: "ул. Артельная 21А, Нижний Новгород" },
+              { emoji: "🏛️", title: "Место", line1: "Шатер", line2: "ул. Артельная 21А, Нижний Новгород" },
             ].map((card, i) => (
               <div
                 key={card.title}
