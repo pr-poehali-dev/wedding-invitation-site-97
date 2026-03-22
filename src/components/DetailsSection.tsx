@@ -20,7 +20,7 @@ export default function DetailsSection() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { emoji: "📅", title: "Дата", line1: "15 августа 2026", line2: "Суббота" },
-              { emoji: "⏰", title: "Время", line1: "Церемония в 15:00", line2: "Банкет в 17:00" },
+              { emoji: "⏰", title: "Время", line1: "Уточняется", line2: "" },
               { emoji: "🏛️", title: "Место", line1: "Ресторан «Розовый сад»", line2: "ул. Цветочная, 12, Москва" },
             ].map((card, i) => (
               <div

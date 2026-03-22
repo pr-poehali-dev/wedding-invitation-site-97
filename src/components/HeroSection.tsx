@@ -123,7 +123,7 @@ export default function HeroSection({ visible, onScrollTo }: HeroSectionProps) {
             15 августа 2026 года
           </p>
           <p className="text-base tracking-widest mb-10" style={{ color: "var(--text-light)" }}>
-            15:00 · Москва
+            Москва
           </p>
 
           <div className="flex gap-4 justify-center mb-10 flex-wrap">
@@ -163,7 +163,6 @@ export default function HeroSection({ visible, onScrollTo }: HeroSectionProps) {
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2" style={{ color: "var(--text-light)" }}>
-          <span className="text-xs tracking-widest uppercase">Листай вниз</span>
           <Icon name="ChevronDown" size={20} className="animate-bounce" />
         </div>
       </section>
