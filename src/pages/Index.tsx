@@ -5,15 +5,6 @@ import RsvpSection from "@/components/RsvpSection";
 
 export default function Index() {
   const [musicPlaying, setMusicPlaying] = useState(false);
-  const [rsvpData, setRsvpData] = useState({
-    name: "",
-    attending: "yes",
-    guests: "1",
-    dietary: "",
-    song: "",
-    message: "",
-  });
-  const [submitted, setSubmitted] = useState(false);
   const [visible, setVisible] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
@@ -29,11 +20,6 @@ export default function Index() {
       audioRef.current.play().catch(() => {});
     }
     setMusicPlaying(!musicPlaying);
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
   };
 
   const scrollTo = (id: string) => {
@@ -61,12 +47,7 @@ export default function Index() {
 
       <DetailsSection />
 
-      <RsvpSection
-        rsvpData={rsvpData}
-        setRsvpData={setRsvpData}
-        submitted={submitted}
-        onSubmit={handleSubmit}
-      />
+      <RsvpSection />
 
       <footer
         className="py-12 px-6 text-center"
