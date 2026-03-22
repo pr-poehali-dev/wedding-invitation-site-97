@@ -43,7 +43,7 @@ export default function Index() {
   return (
     <div className="min-h-screen" style={{ background: "var(--cream)", fontFamily: "'Cormorant Garamond', serif" }}>
       <audio ref={audioRef} loop>
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg" />
+        <source src="https://cdn.poehali.dev/projects/9044207e-e474-4d9e-a73f-e8677ca885cf/files/miyagi-soya.mp3" type="audio/mpeg" />
       </audio>
 
       <button
@@ -77,7 +77,7 @@ export default function Index() {
           className="text-2xl font-light italic mb-2"
           style={{ color: "var(--text-mid)", fontFamily: "'Cormorant Infant', serif" }}
         >
-          Анна &amp; Иван
+          Анастасия &amp; Иван
         </p>
         <p className="text-sm tracking-widest" style={{ color: "var(--text-light)" }}>
           15 АВГУСТА 2026 · МОСКВА

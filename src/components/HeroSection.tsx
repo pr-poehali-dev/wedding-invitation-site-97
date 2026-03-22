@@ -102,7 +102,7 @@ export default function HeroSection({ visible, onScrollTo }: HeroSectionProps) {
             className="text-6xl md:text-8xl font-light leading-tight"
             style={{ color: "var(--text-dark)", letterSpacing: "-0.01em" }}
           >
-            Анна
+            Анастасия
           </h1>
           <div className="text-4xl md:text-5xl my-3 animate-heartbeat inline-block" style={{ color: "var(--rose)" }}>
             ♡
