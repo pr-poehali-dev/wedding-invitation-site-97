@@ -80,7 +80,7 @@ export default function Index() {
           Анастасия &amp; Иван
         </p>
         <p className="text-sm tracking-widest" style={{ color: "var(--text-light)" }}>
-          15 АВГУСТА 2026 · МОСКВА
+          15 АВГУСТА 2026 · НИЖНИЙ НОВГОРОД
         </p>
         <div className="section-divider mt-6" />
       </footer>

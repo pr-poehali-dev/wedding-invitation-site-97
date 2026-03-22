@@ -20,8 +20,8 @@ export default function DetailsSection() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { emoji: "📅", title: "Дата", line1: "15 августа 2026", line2: "Суббота" },
-              { emoji: "⏰", title: "Время", line1: "Уточняется", line2: "" },
-              { emoji: "🏛️", title: "Место", line1: "Ресторан «Розовый сад»", line2: "ул. Цветочная, 12, Москва" },
+              { emoji: "⏰", title: "Время", line1: "17:00", line2: "" },
+              { emoji: "🏛️", title: "Место", line1: "Ресторан «Розовый сад»", line2: "ул. Артельная 21А, Нижний Новгород" },
             ].map((card, i) => (
               <div
                 key={card.title}
@@ -51,7 +51,7 @@ export default function DetailsSection() {
         <div className="max-w-4xl mx-auto">
           <div className="rounded-3xl overflow-hidden shadow-lg photo-frame" style={{ height: "360px", position: "relative" }}>
             <iframe
-              src="https://yandex.ru/map-widget/v1/?ll=37.6173,55.7558&z=14&l=map&pt=37.6173,55.7558,pm2rdl"
+              src="https://yandex.ru/map-widget/v1/?ll=44.004400,56.297643&z=16&l=map&pt=44.004400,56.297643,pm2rdl"
               width="100%"
               height="100%"
               frameBorder="0"
@@ -60,7 +60,7 @@ export default function DetailsSection() {
             />
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
               <a
-                href="https://yandex.ru/maps/?ll=37.6173,55.7558&z=14"
+                href="https://yandex.ru/maps/?ll=44.004400,56.297643&z=16&pt=44.004400,56.297643"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-rose px-6 py-2 rounded-full flex items-center gap-2"

@@ -123,7 +123,7 @@ export default function HeroSection({ visible, onScrollTo }: HeroSectionProps) {
             15 августа 2026 года
           </p>
           <p className="text-base tracking-widest mb-10" style={{ color: "var(--text-light)" }}>
-            Москва
+            Нижний Новгород
           </p>
 
           <div className="flex gap-4 justify-center mb-10 flex-wrap">
