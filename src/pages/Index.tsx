@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import HeroSection from "@/components/HeroSection";
 import DetailsSection from "@/components/DetailsSection";
+import StorySection from "@/components/StorySection";
 import RsvpSection from "@/components/RsvpSection";
 
 export default function Index() {
@@ -29,7 +30,7 @@ export default function Index() {
   return (
     <div className="min-h-screen" style={{ background: "var(--cream)", fontFamily: "'Cormorant Garamond', serif" }}>
       <audio ref={audioRef} loop>
-        <source src="https://drive.google.com/uc?export=download&id=1EWEr3Bh3qGfdL9qwU-Azlo1EgtPg0Jez" type="audio/mpeg" />
+        <source src="https://cdn.poehali.dev/projects/9044207e-e474-4d9e-a73f-e8677ca885cf/bucket/42cbc3b5-cef4-4074-9db3-33e71f8d983d.mp3" type="audio/mpeg" />
       </audio>
 
       <button
@@ -46,6 +47,8 @@ export default function Index() {
       <HeroSection visible={visible} onScrollTo={scrollTo} />
 
       <DetailsSection />
+
+      <StorySection />
 
       <RsvpSection />
 
