@@ -14,13 +14,13 @@ export default function DressCodeSection() {
           src="https://cdn.poehali.dev/projects/9044207e-e474-4d9e-a73f-e8677ca885cf/bucket/f5f8b521-3afe-4b72-8d54-1a4f43bba98f.png"
           alt="Дресс-код палитра"
           className="mx-auto rounded-2xl shadow-lg mb-8"
-          style={{ maxWidth: "320px", width: "100%" }}
+          style={{ maxWidth: "160px", width: "100%" }}
         />
         <img
           src="https://cdn.poehali.dev/projects/9044207e-e474-4d9e-a73f-e8677ca885cf/bucket/8736008a-44b7-4356-97ef-453a85087060.png"
           alt="Примеры образов"
           className="mx-auto rounded-2xl shadow-lg"
-          style={{ maxWidth: "160px", width: "100%" }}
+          style={{ maxWidth: "320px", width: "100%" }}
         />
       </div>
     </section>
