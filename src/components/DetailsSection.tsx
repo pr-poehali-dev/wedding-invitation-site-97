@@ -74,42 +74,6 @@ export default function DetailsSection() {
         </div>
       </section>
 
-      {/* DRESSCODE */}
-      <section
-        className="py-16 px-6"
-        style={{ background: "linear-gradient(135deg, rgba(242,196,196,0.12), rgba(212,184,224,0.12))" }}
-      >
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="ornament mb-3">✦ ✦ ✦</p>
-          <h2 className="text-4xl font-light mb-4" style={{ color: "var(--text-dark)" }}>
-            Дресс-код
-          </h2>
-          <div className="section-divider mb-8" />
-          <p className="text-lg font-light mb-8" style={{ color: "var(--text-mid)" }}>
-            Нежные пастельные тона — розовый, кремовый, лавандовый, персиковый.
-            <br />Без белого и чёрного, пожалуйста 🌸
-          </p>
-          <div className="flex justify-center gap-5 flex-wrap">
-            {[
-              { color: "#f2c4c4", name: "Пудровый" },
-              { color: "#fdf6f0", name: "Кремовый" },
-              { color: "#d4b8e0", name: "Лаванда" },
-              { color: "#f5d5c0", name: "Персиковый" },
-              { color: "#c8dab8", name: "Мятный" },
-            ].map((c) => (
-              <div key={c.name} className="flex flex-col items-center gap-2">
-                <div
-                  className="w-14 h-14 rounded-full shadow-md"
-                  style={{ backgroundColor: c.color, border: "2px solid rgba(232,160,160,0.3)" }}
-                />
-                <span className="text-xs tracking-wide" style={{ color: "var(--text-light)" }}>
-                  {c.name}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }

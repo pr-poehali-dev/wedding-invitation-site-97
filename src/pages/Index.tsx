@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import HeroSection from "@/components/HeroSection";
 import DetailsSection from "@/components/DetailsSection";
 import StorySection from "@/components/StorySection";
+import DressCodeSection from "@/components/DressCodeSection";
 import RsvpSection from "@/components/RsvpSection";
 
 export default function Index() {
@@ -49,6 +50,8 @@ export default function Index() {
       <DetailsSection />
 
       <StorySection />
+
+      <DressCodeSection />
 
       <RsvpSection />
 
