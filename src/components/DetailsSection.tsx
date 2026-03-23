@@ -74,46 +74,6 @@ export default function DetailsSection() {
         </div>
       </section>
 
-      {/* PHOTO */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="ornament mb-3">✦ ✦ ✦</p>
-          <h2 className="text-4xl md:text-5xl font-light mb-4" style={{ color: "var(--text-dark)" }}>
-            Наша история
-          </h2>
-          <div className="section-divider mb-12" />
-
-          <div
-            className="relative mx-auto rounded-3xl overflow-hidden photo-frame flex items-center justify-center flex-col gap-4"
-            style={{
-              maxWidth: "460px",
-              aspectRatio: "4/5",
-              background: "linear-gradient(135deg, rgba(242,196,196,0.25), rgba(212,184,224,0.25), rgba(245,213,192,0.25))",
-            }}
-          >
-            <div className="text-6xl">📸</div>
-            <p className="text-lg font-light italic" style={{ color: "var(--text-mid)" }}>
-              Здесь будет ваше фото
-            </p>
-            <button
-              className="btn-outline-rose px-6 py-2 rounded-full text-sm mt-2"
-              style={{ fontFamily: "'Cormorant Garamond', serif", color: "var(--rose)", border: "1.5px solid var(--rose)", background: "transparent" }}
-            >
-              Загрузить фото
-            </button>
-          </div>
-
-          <p
-            className="mt-10 text-xl font-light italic leading-relaxed max-w-xl mx-auto"
-            style={{ color: "var(--text-mid)", fontFamily: "'Cormorant Infant', serif" }}
-          >
-            "Мы встретились, и мир стал другим.<br />
-            Теперь мы хотим разделить этот особенный день<br />
-            с теми, кого любим."
-          </p>
-        </div>
-      </section>
-
       {/* DRESSCODE */}
       <section
         className="py-16 px-6"
