@@ -29,7 +29,7 @@ export default function Index() {
   return (
     <div className="min-h-screen" style={{ background: "var(--cream)", fontFamily: "'Cormorant Garamond', serif" }}>
       <audio ref={audioRef} loop>
-        <source src="https://cdn.poehali.dev/projects/9044207e-e474-4d9e-a73f-e8677ca885cf/files/miyagi-soya.mp3" type="audio/mpeg" />
+        <source src="https://drive.google.com/uc?export=download&id=1EWEr3Bh3qGfdL9qwU-Azlo1EgtPg0Jez" type="audio/mpeg" />
       </audio>
 
       <button
